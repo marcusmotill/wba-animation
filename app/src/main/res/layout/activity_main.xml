@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/viewToRotate"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp">
+
+        <FrameLayout
+            android:id="@+id/framelayout1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/basicaccess" />
+
+            <ImageView
+                android:id="@+id/basicaccessclip"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/basicacces_clip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/framelayout1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="56dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/emotionalhealth" />
+
+            <ImageView
+                android:id="@+id/emotionalhealthclip"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/emotionalhealth_clip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/framelayout2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="23dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/healthybehavior" />
+
+            <ImageView
+                android:id="@+id/healthybehaviorclip"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/healthybehavior_clip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/framelayout3"
+            android:layout_toStartOf="@+id/framelayout2"
+            android:layout_marginTop="68dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/labsbio" />
+
+            <ImageView
+                android:id="@+id/labsbioclip"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/labsbio_clip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/framelayout4"
+            android:layout_toEndOf="@+id/framelayout7">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/lifeeval" />
+
+            <ImageView
+                android:id="@+id/lifeevalclip"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/lifeeval_clip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/framelayout3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="23dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/physicalhealth" />
+
+            <ImageView
+                android:id="@+id/physicalhealthclip"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/physicalhealth_clip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/framelayout1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="56dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/workenviron" />
+
+            <ImageView
+                android:id="@+id/workenvironclip"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/workenviron_clip" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/bNext"
+        android:layout_below="@+id/viewToRotate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete"
+        android:id="@+id/bComplete"
+        android:layout_below="@+id/bNext"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
